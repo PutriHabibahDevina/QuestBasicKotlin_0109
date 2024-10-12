@@ -6,6 +6,7 @@ package com.example.questbasickotlin_109.ui
 // List Read-Only menggunakan listOf
 // List Mutable menggunakan mutableListOf
 
+/*Fungsi ini menampilkan perbedaan antara List Read-Only dengan Mutable*/
 fun ContohList() {
     println("=== List ===")
 
