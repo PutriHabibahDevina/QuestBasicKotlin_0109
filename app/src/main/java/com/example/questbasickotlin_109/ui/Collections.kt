@@ -8,31 +8,33 @@ package com.example.questbasickotlin_109.ui
 
 /*Fungsi ini menampilkan perbedaan antara List Read-Only dengan Mutable*/
 fun ContohList() {
-    println("=== List ===")
+    println("=== List ===") //Mencetak header untuk bagian List
 
     // List Read-Only
+    // Menggunakan listOf untuk membuat List yang tidak dapat diubah setelah dibuat
     val readOnlyAbjad = listOf("A", "B", "C")
-    println(readOnlyAbjad)
+    println(readOnlyAbjad) // Mencetak isi dari readOnlyAbjad
 
     // List Mutable
+    // Menggunakan mutableListOf untuk membuat List yang dapat diubah
     val shape: MutableList<String> = mutableListOf("Circle", "Square", "Triangle")
-    println(shape)
+    println(shape) // Mencetak isi awal dari shape
 
     // Menambahkan data ke dalam List Mutable
-    shape.add("Circle")
-    println(shape)
+    shape.add("Circle") // Menambahkan elemen "Circle" ke dalam List shape
+    println(shape) // Mencetak isi List setelah penambahan
 
     // Menghapus data dari List Mutable
-    shape.remove("Triangle")
-    println(shape)
+    shape.remove("Triangle") // Menghapus elemen "Triangle" dari List shape
+    println(shape) // Mencetak isi List setelah penghapusan
 
     // Mengubah data di dalam List Mutable
-    shape[0] = "Oval"
-    println(shape)
+    shape[0] = "Oval" // Mengubah elemen pertama dari "Circle" menjadi "Oval"
+    println(shape) // Mencetak isi List setelah perubahan
 
     // List Read-Only
     val shapesLocked: List<String> = shape
-    println(shapesLocked)
+    println(shapesLocked) // Mencetak isi dari shapesLocked yang tidak dapat diubah
 }
 
 // Set adalah kumpulan data yang tidak memiliki posisi atau urutan tertentu dan hanya menyimpan data unik (tidak ada duplikasi)
@@ -41,6 +43,7 @@ fun ContohList() {
 // Set Read-Only menggunakan setOf
 // Set Mutable menggunakan mutableSetOf
 
+/*Fungsi ini menampilkan perbedaan antara Set Read-Only dengan Mutable*/
 fun ContohSet() {
     println("=== Set ===")
 
@@ -62,7 +65,7 @@ fun ContohSet() {
 
     // Set Read-Only
     val shapesLocked: Set<String> = shape
-    println(shapesLocked)
+    println(shapesLocked) // Mencetak isi dari shapesLocked yang tidak dapat diubah
 }
 
 // Map adalah kumpulan data yang disusun dalam pasangan key-value
@@ -71,6 +74,7 @@ fun ContohSet() {
 // Map Read-Only menggunakan mapOf
 // Map Mutable menggunakan mutableMapOf
 
+/*Fungsi ini menampilkan perbedaan antara Map Read-Only dengan Mutable*/
 fun ContohMap() {
     println("=== Map ===")
 
@@ -83,15 +87,15 @@ fun ContohMap() {
     println(shape)
 
     // Menambahkan data ke dalam Map Mutable
-    shape["Rectangle"] = 4
+    shape["Rectangle"] = 4 // Menambahkan pasangan key-value "Rectangle" -> 4 ke dalam Map shape
     println(shape)
 
     // Menghapus data dari Map Mutable
-    shape.remove("Circle")
+    shape.remove("Circle") // Menghapus pasangan key-value dengan key "Circle" dari Map shape
     println(shape)
 
     // Mengubah data di dalam Map Mutable
-    shape["Square"] = 5
+    shape["Square"] = 5 // Mengubah nilai dari key "Square" menjadi 5
     println(shape)
 
     // Map Read-Only
@@ -99,6 +103,7 @@ fun ContohMap() {
     println(shapesLocked)
 }
 
+//Memanggil fungsi-fungsi di atas
 fun main() {
     ContohList()
     ContohSet()
