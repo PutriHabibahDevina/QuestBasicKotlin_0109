@@ -6,8 +6,8 @@ package com.example.questbasickotlin_109.ui
 // Data class juga menyediakan fungsi copy() untuk membuat salinan objek dengan beberapa perubahan.
 
 data class DataClass(
-    val id: Int,
-    var email: String
+    val id: Int, //variabelnya tidak dapat diubah
+    var email: String //variabelnya dapat diubah
 )
 
 fun main() {
