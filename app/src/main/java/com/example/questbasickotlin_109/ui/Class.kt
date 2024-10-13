@@ -1,7 +1,10 @@
 package com.example.questbasickotlin_109.ui
 
+// Deklarasi kelas Motor tanpa properti atau fungsi tambahan
 class Motor()
 
+//id read-only (val) atau tidak dapat diubah
+//email mutable (var) atau dapat diubah
 class Contact(val id: Int, var email: String)
 
 fun main(){
