@@ -6,7 +6,7 @@ package com.example.questbasickotlin_109.ui
 // Lambda functions menggunakan tanda panah (->) untuk memisahkan parameter dan body fungsi
 
 fun uppercaseString(string: String): String {
-    return string.uppercase()
+    return string.uppercase() //supaya hurufnya kapital semua
 }
 
 // Dapat ditulis dalam ekspresi lambda sbb:
