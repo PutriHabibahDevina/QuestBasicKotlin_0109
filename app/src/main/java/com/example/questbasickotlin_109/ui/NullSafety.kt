@@ -1,5 +1,9 @@
+/*Menentukan package tempat file ini berada, yang membantu
+dalam pengorganisasian dan modularisasi kode*/
 package com.example.questbasickotlin_109.ui
 
+/*Menampilkan perbedaan antara variabel yang tidak boleh null dan yang boleh null,
+serta penggunaan operator-operator untuk menangani nilai null*/
 fun nullSafety() {
     //neverNull has String type
     var neverNull: String = "This can't be null"
