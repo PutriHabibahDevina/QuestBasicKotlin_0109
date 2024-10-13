@@ -99,8 +99,8 @@ fun ContohMap() {
     println(shape)
 
     // Map Read-Only
-    val shapesLocked: Map<String, Int> = shape
-    println(shapesLocked)
+    val shapesLocked: Map<String, Int> = shape // Mengonversi menjadi Map Read-Only
+    println(shapesLocked) // Output: {Circle=1, Square=2, Triangle=3}
 }
 
 //Memanggil fungsi-fungsi di atas
