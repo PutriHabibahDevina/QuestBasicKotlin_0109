@@ -6,7 +6,7 @@ fun withoutParameter() {
 }
 
 fun withParameter(name: String) {
-    println()
+    println() // Mencetak baris kosong untuk pemisah
     println("== withParameter ==")
     println("Hello, $name!")
 }
@@ -27,6 +27,7 @@ fun withDefaultParameter(name: String = "Indra", age: Int) {
     println("Hellom $name! you are $age years old. ")
 }
 
+// Fungsi dengan return statement yang mengembalikan hasil perkalian panjang dan lebar
 fun withReturn(panjang : Int, lebar : Int) {
     return println(panjang * lebar)
 }
